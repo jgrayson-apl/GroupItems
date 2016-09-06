@@ -209,7 +209,7 @@ define([
 
       // FETCH ALL //
       if(groupItemsData.results.length < groupItemsData.total) {
-        this.fetchAllNode = put(this.itemCountNode, "span.info-fetch-all", { innerHTML: "Fetch All", title: "Retrieve all items in this group..." });
+        this.fetchAllNode = put(this.itemCountNode, "span.info-fetch-all", { innerHTML: "Fetch All", title: "Retrieve all remaining items in this group..." });
         on(this.fetchAllNode, "click", function () {
           this.getItems(groupItemsData.nextQueryParams, true);
         }.bind(this));
