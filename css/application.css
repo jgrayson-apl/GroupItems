@@ -1,0 +1,264 @@
+
+#main-container {
+  width  : 100%;
+  height : 100%;
+}
+
+#app-title {
+  font-size : 21pt;
+}
+
+#main-left-pane {
+  width : 350px;
+}
+
+#details-node,
+.filters-node {
+  margin     : 5px 5px 15px 5px;
+  padding    : 10px;
+  border     : solid 1px #ccc;
+  box-shadow : 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#details-node .dijitTextBox {
+  border-color : #0079c1;
+}
+
+.info-node {
+  padding : 3px 5px;
+}
+
+.info-label {
+  display      : inline-block;
+  width        : 80px;
+  text-align   : right;
+  margin-right : 5px;
+  font-weight  : bold;
+}
+
+.info-value {
+  color : #0079c1;
+}
+
+.info-fetch-all {
+  cursor      : pointer;
+  margin-left : 10px;
+  padding     : 3px;
+  font-size   : 10pt;
+  color       : #999;
+  border      : solid 1px #eee;
+}
+
+.info-fetch-all:hover {
+  color        : #666;
+  border-color : #ccc;
+}
+
+.info-fetch-all:active {
+  color        : #0079c1;
+  border-color : #0079c1;
+  box-shadow   : 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.info-filter-count {
+  font-size : 10pt;
+}
+
+.info-filter-count {
+  text-align : center;
+}
+
+#text-filter-node,
+#type-filter-node {
+  padding       : 10px;
+  border-bottom : solid 2px #ddd;
+}
+
+#text-filter-label,
+#type-filter-label {
+  font-weight : bold;
+}
+
+#text-filter-info {
+  clear       : both;
+  margin-left : 15px;
+  padding     : 3px;
+  color       : #666;
+  font-size   : 9pt;
+  font-style  : italic;
+}
+
+#clear-text-filter.esri-icon-close-circled,
+#clear-type-filter.esri-icon-close-circled {
+  cursor         : pointer;
+  display        : inline-block;
+  vertical-align : middle;
+  position       : absolute;
+  right          : 32px;
+}
+
+#clear-text-filter.esri-icon-close-circled:hover,
+#clear-type-filter.esri-icon-close-circled:hover {
+  color : red;
+}
+
+#item-type-list-node.dgrid {
+  border : none !important;
+}
+
+#item-type-list-node .dgrid-selected {
+  color      : #fff;
+  background : #0079c1;
+}
+
+.item-type {
+  cursor                      : pointer;
+  padding                     : 5px;
+  -webkit-transition-duration : 0.2s;
+  -moz-transition-duration    : 0.2s;
+  -o-transition-duration      : 0.2s;
+  -ms-transition-duration     : 0.2s;
+  transition-duration         : 0.2s;
+  -webkit-transition-property : background-color;
+  -moz-transition-property    : background-color;
+  -o-transition-property      : background-color;
+  -ms-transition-property     : background-color;
+  transition-property         : background-color;
+}
+
+.item-type:hover {
+  color      : #0079c1;
+  background : #eee;
+}
+
+.view-pane {
+  padding : 0 !important;
+  margin  : 0 !important;
+}
+
+#main-center-pane {
+  overflow : hidden;
+}
+
+#item-list-node {
+  height : 100%;
+}
+
+#item-list-node.dgrid {
+  border : none !important;
+}
+
+.dgrid-no-data,
+.dgrid-loading {
+  color      : #999;
+  font-size  : 1.5em;
+  padding    : 1.5em;
+  text-align : center;
+}
+
+#item-list-node .dgrid-highlight {
+  background-color : #ff6 !important;
+}
+
+#item-list-node .dgrid-row {
+  cursor                      : pointer;
+  padding                     : 5px 0 5px 0;
+  border-bottom               : solid 1px #ccc;
+
+  -webkit-transition-duration : 0.2s;
+  -moz-transition-duration    : 0.2s;
+  -o-transition-duration      : 0.2s;
+  -ms-transition-duration     : 0.2s;
+  transition-duration         : 0.2s;
+  -webkit-transition-property : background-color;
+  -moz-transition-property    : background-color;
+  -o-transition-property      : background-color;
+  -ms-transition-property     : background-color;
+  transition-property         : background-color;
+}
+
+#item-list-node .dgrid-row:hover {
+  color            : #0079c1;
+  background-color : #eee;
+}
+
+#item-list-node .dgrid-cell {
+  height         : 1em;
+  border         : none !important;
+  vertical-align : middle;
+}
+
+#item-list-node .dgrid-cell[role="columnheader"] {
+  padding          : 5px;
+  border-left      : solid 1px #999 !important;
+  border-bottom    : solid 1px #999 !important;
+  color            : #fff;
+  background-color : #0079c1;
+}
+
+.item-icon {
+  padding-left : 24px !important;
+}
+
+.item-thumbnail {
+  max-height : 40px;
+  box-shadow : 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.item-as-html {
+  font-style : italic;
+  color      : #999;
+  padding    : 2px;
+  min-height : 1.5em;
+  max-height : 5em;
+}
+
+.item-has-value .item-as-html {
+  font-style : unset;
+  color      : unset;
+  box-shadow : 0 1px 2px rgba(0, 0, 0, 0.3);
+  overflow   : auto !important;
+}
+
+.field-thumbnailUrl {
+  width      : 100px;
+  text-align : center;
+}
+
+.field-serviceName {
+  width : 200px;
+}
+
+.field-owner {
+  text-align    : right;
+  width         : 140px;
+  padding-right : 10px;
+}
+
+.field-owner[role="columnheader"] {
+  text-align : left !important;
+}
+
+.field-id {
+  width : 300px;
+}
+
+.field-access {
+  width : 100px;
+}
+
+.field-type {
+  width : 250px;
+}
+
+.field-title {
+  width : 400px;
+}
+
+.field-created,
+.field-modified {
+  width      : 225px;
+  text-align : right;
+}
+
+

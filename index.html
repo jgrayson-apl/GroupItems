@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Group Items</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="icon" href="//www.esri.com/favicon.ico">
+    <link rel="stylesheet" href="//js.arcgis.com/4.0/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="//js.arcgis.com/4.0/esri/css/main.css">
+    <link rel="stylesheet" href="//js.arcgis.com/4.0/dgrid/css/dgrid.css">
+    <link rel="stylesheet" href="./css/boilerplate.css">
+    <link rel="stylesheet" href="./css/application.css">
+    <script type="text/javascript" src="./js/dojoConfig.js"></script>
+    <script type="text/javascript" src="//js.arcgis.com/4.0/"></script>
+    <script type="text/javascript">
+      require([
+        "arcgis-devtools",
+        "dojo/ready",
+        "application"
+      ], function (arcgisDevTools, ready, applicationMain) {
+        // ARCGIS DEV TOOLS //
+        arcgisDevTools.install();
+
+        // MAKE SURE HTML AND DIJITS AREA READY... //
+        ready(function () {
+          var mainApp = new applicationMain();
+        });
+
+      });
+    </script>
+  </head>
+  <body class="claro boilerplate--loading">
+    <div class="boilerplate-loading-indicator">
+      <div class="boilerplate-loading-message" id="loading_message"></div>
+    </div>
+    <div id="main-container" data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="gutters:false">
+      <div id="main-left-pane" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'left'">
+        <div id="details-node"></div>
+        <div class="filters-node">
+          <div id="text-filter-node">
+            <span id="text-filter-label">Text Filter</span>
+            <span id="clear-text-filter" class="esri-icon-close-circled" title="Clear Text Filter"></span>
+          </div>
+          <div id="text-filter-info">Title, Summary, Description, and Tags (exact match)</div>
+          <div id="text-filter-input-node"></div>
+        </div>
+        <div class="filters-node">
+          <div id="type-filter-node">
+            <span id="type-filter-label">Type Filter</span>
+            <span id="clear-type-filter" class="esri-icon-close-circled" title="Clear Type Filter"></span>
+          </div>
+          <div id="item-type-list-node"></div>
+        </div>
+      </div>
+      <div id="main-center-pane" class="view-pane" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'">
+        <div id="item-list-node"></div>
+      </div>
+    </div>
+  </body>
+</html>
