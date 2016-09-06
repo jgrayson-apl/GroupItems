@@ -209,7 +209,7 @@ define([
 
       // FETCH ALL //
       if(groupItemsData.results.length < groupItemsData.total) {
-        this.fetchAllNode = put(this.itemCountNode, "span.info-fetch-all", "Fetch All");
+        this.fetchAllNode = put(this.itemCountNode, "span.info-fetch-all", { innerHTML: "Fetch All", title: "Retrieve all items in this group..." });
         on(this.fetchAllNode, "click", function () {
           this.getItems(groupItemsData.nextQueryParams, true);
         }.bind(this));
@@ -239,7 +239,7 @@ define([
 
       // ITEM STORE //
       this.itemStore = new TrackableMemory({ data: [] });
-      // TRACK STORE //
+      // TRACK STORE UPDATES //
       this.itemStoreTrack = this.itemStore.track();
       this.itemStoreTrack.on("add", function () {
         if(this.itemStore.data.length < this.itemTotal) {

@@ -80,9 +80,8 @@
 }
 
 #text-filter-info {
-  clear       : both;
-  margin-left : 15px;
-  padding     : 3px;
+  margin-left : 10px;
+  padding     : 5px;
   color       : #666;
   font-size   : 9pt;
   font-style  : italic;
